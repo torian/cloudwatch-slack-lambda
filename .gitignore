@@ -1,0 +1,8 @@
+build
+
+*.swa
+*.swp
+*.swo
+*.pyc
+__pycache__
+*.zip

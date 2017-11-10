@@ -1,0 +1,50 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:us-east-2:12345:Monitoring:123-qwe-456-asd",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "msg-id",
+        "TopicArn": "arn:aws:sns:us-east-2:12345:Monitoring",
+        "Subject": "OK: \"Alarm Name\" in US East (Ohio)",
+        "Message": {
+          "AlarmName": "Alarm Name",
+          "AlarmDescription": "Alarm desc",
+          "AWSAccountId": "12345",
+          "NewStateValue": "OK",
+          "NewStateReason": "state reason",
+          "StateChangeTime": "2022-01-02T03:04:05.006+0000",
+          "Region": "US Eest (Ohio)",
+          "OldStateValue": "ALARM",
+          "Trigger": {
+            "MetricName": "MetricName",
+            "Namespace": "SomeNamespace",
+            "StatisticType": "Statistic",
+            "Statistic": "AVERAGE",
+            "Unit": null,
+            "Dimensions": [
+              {
+                "name": "DimensionName",
+                "value": "DimensionValue"
+              }
+            ],
+            "Period": 60,
+            "EvaluationPeriods": 2,
+            "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+            "Threshold": 1,
+            "TreatMissingData": "",
+            "EvaluateLowSampleCountPercentile": ""
+          }
+        },
+        "Timestamp": "2022-01-02T03:04:05.006Z",
+        "SignatureVersion": "1",
+        "Signature": "signature==",
+        "SigningCertUrl": "https://signingCertUrl",
+        "UnsubscribeUrl": "https://unsubscribeUrl",
+        "MessageAttributes": {}
+      }
+    }
+  ]
+}
